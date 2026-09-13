@@ -1,11 +1,13 @@
 body {
    background-color:aliceblue;
+   margin: 20px; /*margenes*/
 }
 
 header{  /*controla el estilo del encabezado*/
     display: flex; /* todo lo que esta en el header queda uno al lodo del otro acomodo h1 y nav*/
     justify-content: space-between; /*propiedad de espacio entre las cosas del header*/
     padding: 20px; /**/
+    margin-bottom: 20px;
 }
 
 main ul{ /*controla el estilo de la lista*/
@@ -13,11 +15,18 @@ main ul{ /*controla el estilo de la lista*/
     gap: 20px; /*propiedad para separar las palabras*/
     list-style-type: none;
 }
+main >p{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
 
 .productos
 {
     display: flex;
-    gap: 20px;
+    gap: 50px; /*espacio entre las cajas*/
+    justify-content: center; /*centrar las cajas*/
 }
 
 .productos li{
@@ -25,12 +34,40 @@ main ul{ /*controla el estilo de la lista*/
     border-style: solid;
     border-color: black;
     padding: 20px; /*borde al rededor del elemento de la caja*/
+    display: flex; /*hace que la caja sea flexible */
+    flex-direction: column; /*flex-direction como acomodar los elementos colum:encolumnas*/
+    text-align: center; /*alinear texto*/
+    border-radius: 10px; /*redondear los bordes de las cajas*/
+}
+
+.productos p{ /*en p estan los precios*/
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.productos a{ /*en a esta el nombre del producto*/
+    color: black;
+    font-size: 20px;
+    text-decoration: none; /*esto le saca el subrayado al nombre de los productos*/
 }
 
 .productos img{
     width: 200px;
     height: 200px;
+    object-fit: contain; /*que la img se mete en un espacio 200x200 sin deformarse*/
 }
+
+.productos button{
+    padding: 10px; /*padding espacio interno dentro del boton*/
+    border-radius: 10px;
+    background-color:cornsilk;
+    color: black;
+    transition: 0.3s; /*efecto de 3 segundos de color en el boton*/
+}
+
+/*.productos button:hover{ /*cambia el color del boton cuando el mouse pasa
+    background-color: aqua;
+}*/
 
 h1 {
     color:black;
