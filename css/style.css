@@ -1,0 +1,43 @@
+body {
+   background-color:aliceblue;
+}
+
+header{  /*controla el estilo del encabezado*/
+    display: flex; /* todo lo que esta en el header queda uno al lodo del otro acomodo h1 y nav*/
+    justify-content: space-between; /*propiedad de espacio entre las cosas del header*/
+    padding: 20px; /**/
+}
+
+main ul{ /*controla el estilo de la lista*/
+    display: flex;
+    gap: 20px; /*propiedad para separar las palabras*/
+    list-style-type: none;
+}
+
+.productos
+{
+    display: flex;
+    gap: 20px;
+}
+
+.productos li{
+    border-width: 2px; /*el borde de las cajas de los productos se controla con estas 3 propiedades*/
+    border-style: solid;
+    border-color: black;
+    padding: 20px; /*borde al rededor del elemento de la caja*/
+}
+
+.productos img{
+    width: 200px;
+    height: 200px;
+}
+
+h1 {
+    color:black;
+}
+
+.menu{
+display: flex;
+    gap: 20px; /*propiedad para separar las palabras*/
+    list-style-type: none;
+}
