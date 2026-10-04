@@ -1,13 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
    background-color:aliceblue;
    margin: 20px; /*margenes*/
+   display: flex; 
+   flex-direction: column;
+   min-height: 100vh;
 }
 
 header{  /*controla el estilo del encabezado*/
-    display: flex; /* todo lo que esta en el header queda uno al lodo del otro acomodo h1 y nav*/
+   /* todo lo que esta en el header queda uno al lodo del otro acomodo h1 y nav*/
     justify-content: space-between; /*propiedad de espacio entre las cosas del header*/
     padding: 20px; /**/
     margin-bottom: 20px;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 2rem;
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main ul{ /*controla el estilo de la lista*/
@@ -29,7 +50,7 @@ h2{
     justify-content: center; /*centrar las cajas*/
 }
 
-.productos li{
+.productos article{
     border-width: 2px; /*el borde de las cajas de los productos se controla con estas 3 propiedades*/
     border-style: solid;
     border-color: black;
